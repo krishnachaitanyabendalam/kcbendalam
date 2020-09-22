@@ -1,0 +1,14 @@
+/*
+Write an SQL query to achieve the same. Return ID, name, marks, grade for each student.
+*/
+select id,name 
+  case
+    when makrs>=90 then 'A+'
+    when makrs<90 and marks >=70 then 'A'
+    when makrs<70 and marks >=50 then 'B'
+    when makrs<50 and marks >=40 then 'C'
+    else 'FAIL'
+  end as grade
+ from student
+ order by id
+  
