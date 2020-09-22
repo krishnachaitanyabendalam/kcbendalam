@@ -1,7 +1,7 @@
 /*
 Write an SQL query to achieve the same. Return ID, name, marks, grade for each student.
 */
-select id,name 
+select id,name,marks,
   case
     when marks>=90 then 'A+'
     when marks<90 and marks >=70 then 'A'
