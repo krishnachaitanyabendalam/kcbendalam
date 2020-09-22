@@ -1,0 +1,1 @@
+Select id,name from customer order by name desc, id asc
